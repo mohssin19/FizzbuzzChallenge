@@ -4,7 +4,7 @@
     {
         public string IsFizzbuzz(int number)
         {
-            return string.Empty;
+            return number % 3 == 0 ? "Fizz" : string.Empty;
         }
     }
 }
