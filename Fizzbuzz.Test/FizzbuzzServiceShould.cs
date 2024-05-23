@@ -37,5 +37,13 @@ namespace Fizzbuzz.Test
             var actual = _sut.IsFizzbuzz(11);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void FizzbuzzService_should_return_Fizzbuzz()
+        {
+            var expected = "Fizzbuzz";
+            var actual = _sut.IsFizzbuzz(15);
+            Assert.Equal(expected, actual);
+        }
     }
 }
