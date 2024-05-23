@@ -45,5 +45,13 @@ namespace Fizzbuzz.Test
             var actual = _sut.IsFizzbuzz(15);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void FizzbuzzService_IsNotDivisibleBy3or5_return_number()
+        {
+            var expected = "29";
+            var actual = _sut.IsFizzbuzz(29);
+            Assert.Equal(expected, actual);
+        }
     }
 }
