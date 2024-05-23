@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var fizzbuzzService = new FizzbuzzService();
+            fizzbuzzService.ProcessFizzbuzz(1, 100);
         }
     }
 }
