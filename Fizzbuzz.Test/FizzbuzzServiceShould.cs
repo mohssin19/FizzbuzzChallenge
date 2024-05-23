@@ -13,5 +13,13 @@ namespace Fizzbuzz.Test
             var actual = _sut.IsFizzbuzz(3);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void FizzbuzzService_IsNotDivisibleBy3_should_return_number()
+        {
+            var expected = "1";
+            var actual = _sut.IsFizzbuzz(1);
+            Assert.Equal(expected, actual);
+        }
     }
 }
